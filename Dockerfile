@@ -22,4 +22,4 @@ ENV RESOLUTION=1920x1080
 # to the host at the specified ports (8080, 5900, and 8443)
 EXPOSE 80 5900 443
 
-CMD ["-v", "/dev/shm:/dev/shm", "-p", "8080:80", "-p", "5900:5900", "-e", "VNC_PASSWORD=$VNC_PASSWORD", "-e", "HTTP_PASSWORD=$HTTP_PASSWORD", "-e", "SSL_PORT=$SSL_PORT", "-e", "RESOLUTION=$RESOLUTION", "-e", "USER=$USER", "-e", "PASSWORD=$PASSWORD", "-e", "RELATIVE_URL_ROOT=$RELATIVE_URL_ROOT", "dorowu/ubuntu-desktop-lxde-vnc"]
+CMD ["-v", "/dev/shm:/dev/shm", "-p", "8080:80", "-p", "5900:5900", "-e", "RESOLUTION=$RESOLUTION", "dorowu/ubuntu-desktop-lxde-vnc"]
