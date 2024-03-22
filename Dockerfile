@@ -4,7 +4,7 @@ FROM dorowu/ubuntu-desktop-lxde-vnc
 ENV VNC_PASSWORD=my_password
 
 # Set the HTTP base authentication password
-ENV HTTP_PASSWORD=my_http_password
+#ENV HTTP_PASSWORD=my_http_password
 
 # Set the SSL port (443)
 ENV SSL_PORT=443
@@ -13,10 +13,10 @@ ENV SSL_PORT=443
 ENV RESOLUTION=1920x1080
 
 # Set the default user and password
-ENV USER=my_user PASSWORD=my_user_password
+#ENV USER=my_user PASSWORD=my_user_password
 
 # Set the relative URL root (if deploying to a subdirectory)
-ENV RELATIVE_URL_ROOT=my_relative_url_root
+#ENV RELATIVE_URL_ROOT=/
 
 # Run the container with the ports for HTTP (80), VNC (5900), and HTTPS (443) forwarded
 # to the host at the specified ports (8080, 5900, and 8443)
